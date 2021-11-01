@@ -4,7 +4,7 @@ export class Producto{
     cantidad:number; 
     departamento:String; 
 
-    constructor(pnombre:String,pcantidad:number,pdepartamento:string){ 
+    constructor(pnombre:String='',pcantidad:number=0,pdepartamento:string=''){ 
         this.nombre=pnombre; 
         this.cantidad=pcantidad;  
         this.departamento=pdepartamento;

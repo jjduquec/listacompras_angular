@@ -1,1 +1,10 @@
-<h2>Esto es una lista de compras</h2>
+<div class="productos">
+    <div class="producto" *ngFor="let producto of productos;let indice=index">
+        <p>{{producto.nombre}}</p>
+        <div>
+            <p>Cantidad:{{producto.cantidad}}</p>
+            <p>Departamento:{{producto.departamento}}</p>
+        </div>
+        <button (click)="onClick(indice)">Comprar</button>
+    </div>
+</div>
